@@ -17,6 +17,16 @@
   </a> -->
 </div>
 
+## 📱 Screenshots
+
+<div align="center">
+  <h3>Desktop View</h3>
+  <img src="public/output/desktop.png" alt="Desktop Screenshot" width="800"/>
+  
+  <h3>Mobile View</h3>
+  <img src="public/output/mobile.png" alt="Mobile Screenshot" width="300"/>
+</div>
+
 ## ✨ Features
 
 - Curated lofi music playlists for maximum productivity
@@ -29,8 +39,7 @@
 
 ## 🎯 Live Demo
 
-[Lofi Vibes](https://lofi-vibes.vercel.app) 
-
+Try it out: [Lofi Vibes](https://lofi-vibes.vercel.app/)
 
 ### Prerequisites
 
