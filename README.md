@@ -20,13 +20,13 @@
 
 ## ✨ Features
 
-- 🎵 Curated lofi music playlists for maximum productivity
-- 🖼️ Beautiful dynamic wallpapers with smooth transitions
-- 📝 Built-in sticky notes for quick thoughts and tasks
-- 📱 Progressive Web App (PWA) for native app experience
-- 🚀 Super lightweight and blazing fast
-- 💾 Offline support for uninterrupted sessions
-- 🎨 Clean, minimalist UI design
+- Curated lofi music playlists for maximum productivity
+- Beautiful dynamic wallpapers with smooth transitions
+- Built-in sticky notes for quick thoughts and tasks
+- Progressive Web App (PWA) for native app experience
+- Super lightweight and blazing fast
+- Offline support for uninterrupted sessions
+- Clean, minimalist UI design
 
 ## 🎯 Live Demo
 
@@ -104,15 +104,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Author
 
-- Inspired by the lofi community
-- All the amazing lofi artists
-- [Next.js](https://nextjs.org/) team for the incredible framework
-- The open-source community
-
-## 📞 Contact
-
-Pradeep Dhungana - [@dhunganaPradeep](https://github.com/dhunganaPradeep)
-
-Project Link: [https://github.com/dhunganaPradeep/lofi-vibes](https://github.com/dhunganaPradeep/lofi-vibes)
+Pradip Dhungana - [@dhunganaPradeep](https://dhunganapradip.com.np)
