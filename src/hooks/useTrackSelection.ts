@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect } from 'react'
 import ReactPlayer from 'react-player'
-import { TRACKS, PLAYLISTS } from '@/constants'
+import { TRACKS } from '@/constants'
 import type { Track } from '@/types'
 
 export function useTrackSelection() {
