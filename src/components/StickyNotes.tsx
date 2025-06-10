@@ -154,7 +154,7 @@ export function StickyNotes() {
         <AnimatePresence>
           {notes.map((note) => {
             const color = STICKY_NOTE_COLORS.find(c => c.name === note.color)
-            const font = handwritingFonts[note.fontIndex || 0]
+        //    const font = handwritingFonts[note.fontIndex || 0]
             
             return (
               <motion.div

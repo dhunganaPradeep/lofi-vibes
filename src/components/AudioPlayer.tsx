@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import { PlayIcon, PauseIcon, SpeakerWaveIcon, ForwardIcon, BackwardIcon, QueueListIcon, ArrowPathRoundedSquareIcon } from '@heroicons/react/24/solid'
 import { useTrackSelection } from '@/hooks/useTrackSelection'
-import { DEFAULT_VOLUME } from '@/constants'
 import { PlaylistSidebar } from './PlaylistSidebar'
 
 const ReactPlayer = dynamic(() => import('react-player'), {
