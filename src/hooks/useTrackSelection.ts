@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect } from 'react'
 import ReactPlayer from 'react-player'
-import { TRACKS } from '@/constants'
+import { TRACKS, PLAYLISTS } from '@/constants'
 import type { Track } from '@/types'
 
 export function useTrackSelection() {
@@ -21,7 +21,7 @@ export function useTrackSelection() {
     const allTracks = TRACKS.filter(track => track.id !== currentTrack?.id)
     if (allTracks.length === 0) return null
     return allTracks[Math.floor(Math.random() * allTracks.length)]
-  }, [currentTrack])
+  }, [currentTrack?.id])
 
   const getRandomTrackFromPlaylist = useCallback(() => {
     const playlistTracks = getCurrentPlaylistTracks().filter(track => track.id !== currentTrack?.id)
@@ -29,7 +29,7 @@ export function useTrackSelection() {
       return getRandomTrack()
     }
     return playlistTracks[Math.floor(Math.random() * playlistTracks.length)]
-  }, [currentPlaylist, currentTrack, getCurrentPlaylistTracks, getRandomTrack])
+  }, [currentTrack?.id, getCurrentPlaylistTracks, getRandomTrack])
 
   useEffect(() => {
     if (!currentTrack) {
@@ -39,7 +39,7 @@ export function useTrackSelection() {
         setIsPlaying(false)
       }
     }
-  }, [])
+  }, [currentTrack, getCurrentPlaylistTracks])
 
   const togglePlay = () => {
     setIsPlaying(!isPlaying)

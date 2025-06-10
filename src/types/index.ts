@@ -6,11 +6,7 @@ export interface Track {
   playlist: string;
 }
 
-export interface Wallpaper {
-  id: string;
-  url: string;
-  credit: string;
-}
+export type Wallpaper = '/images/1.png' | '/images/2.png' | '/images/3.png' | '/images/4.png' | '/images/5.png';
 
 export interface PlayerState {
   isPlaying: boolean;

@@ -1,6 +1,12 @@
 import './globals.css'
 import type { Metadata, Viewport } from 'next'
 import { Providers } from '@/components/Providers'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -44,16 +50,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en" className={`h-full ${inter.className}`}>
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
-      <body className="h-full bg-black text-white antialiased font-['Inter']">
+      <body className="h-full bg-black text-white antialiased">
         <Providers>
           {children}
         </Providers>

@@ -16,15 +16,20 @@ export function useWallpaperTransition() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const newWallpaper = WALLPAPERS[Math.floor(Math.random() * WALLPAPERS.length)]
-      setCurrentWallpaper(newWallpaper)
+      const currentIndex = WALLPAPERS.indexOf(currentWallpaper as Wallpaper)
+      const nextIndex = (currentIndex + 1) % WALLPAPERS.length
+      setCurrentWallpaper(WALLPAPERS[nextIndex])
     }, WALLPAPER_CHANGE_INTERVAL)
     return () => clearInterval(interval)
-  }, [])
+  }, [currentWallpaper])
 
   const setRandomWallpaper = () => {
-    const randomWallpaper = WALLPAPERS[Math.floor(Math.random() * WALLPAPERS.length)]
-    setCurrentWallpaper(randomWallpaper)
+    const currentIndex = WALLPAPERS.indexOf(currentWallpaper as Wallpaper)
+    let newIndex
+    do {
+      newIndex = Math.floor(Math.random() * WALLPAPERS.length)
+    } while (newIndex === currentIndex)
+    setCurrentWallpaper(WALLPAPERS[newIndex])
   }
 
   return [currentWallpaper, setRandomWallpaper] as const
