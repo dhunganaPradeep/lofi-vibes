@@ -1,7 +1,6 @@
-# 🎵 Lofi Vibes
-
 <div align="center">
-  <img src="public/icon-192x192.png" alt="Lofi Vibes Logo" width="120"/>
+  <h1>LOFI VIBES</h1>
+  <img src="public/icons/icon-192x192.png" alt="Lofi Vibes Logo" width="120"/>
   <br/>
   <p><strong>A minimalist lofi music web app for your coding and study sessions</strong></p>
   <!-- <a href="https://github.com/dhunganaPradeep/lofi-vibes/stargazers">
