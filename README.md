@@ -17,16 +17,6 @@
   </a> -->
 </div>
 
-## 📱 Screenshots
-
-<div align="center">
-  <h3>Desktop View</h3>
-  <img src="public/output/desktop.png" alt="Desktop Screenshot" width="800"/>
-  
-  <h3>Mobile View</h3>
-  <img src="public/output/mobile.png" alt="Mobile Screenshot" width="300"/>
-</div>
-
 ## ✨ Features
 
 - Curated lofi music playlists for maximum productivity
@@ -97,6 +87,18 @@ yarn start
 - [React Use Audio Player](https://github.com/E-Kuerschner/useAudioPlayer) - Audio management
 - [Headless UI](https://headlessui.com/) - Accessible UI components
 - [Hero Icons](https://heroicons.com/) - Beautiful hand-crafted SVG icons
+
+
+## Outputs
+
+<div align="center">
+  <h3>Desktop View</h3>
+  <img src="public/output/desktop.png" alt="Desktop Screenshot" width="800"/>
+  
+  <h3>Mobile View</h3>
+  <img src="public/output/mobile.png" alt="Mobile Screenshot" width="300"/>
+</div>
+
 
 ## 🤝 Contributing
 
